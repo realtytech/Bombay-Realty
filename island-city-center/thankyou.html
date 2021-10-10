@@ -1,0 +1,96 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=0" />
+	<title></title>
+	<meta name="description" content="">
+
+	<link rel="canonical" href="" />
+	<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+	<style>
+		.thankyou{ 
+			background-image: url('images/thankyou-banner.jpg');
+			background-size: cover;
+			padding: 0;
+			background-position: center;
+		}
+		.thankImg{ 
+			position: absolute;
+			bottom: 0;
+			right: 0;
+			left: 0;
+			max-width: 700px;
+			margin: 0 auto;
+		}
+		.thankyou .container{ 
+			position: relative;
+			height: 100vh;
+			background-color: #0000008f;
+		}
+		.txtDiv{	
+			/*border: 1px solid #fff;*/
+			padding: 50px 30px;
+			position: absolute;
+			left: 0;
+			right: 0;
+			margin: 0 auto;
+			text-align: center;
+			top: 50%;
+			transform: translateY(-50%); max-width: 900px; 
+		}
+		@media only screen and (max-width: 768px){
+			.thankyou{
+				background-position: 27%;
+			}
+		}
+	</style>
+
+	
+	</head>
+
+	<body>
+
+	<section class="thankyou">
+		<div class="container">
+			<div class="txtDiv">
+				<h2>Thank you for your request.</h2>
+				<h3>Our sales team will get back to you soon.</h3>
+			</div>
+		</div>
+	</section>
+
+	<!-- Stylesheets -->
+	<link rel="stylesheet" type="text/css" href="css/jquery.fancybox.css">
+	<link rel="stylesheet" type="text/css" href="css/owl.carousel.min.css">
+	<link rel="stylesheet" type="text/css" href="css/intlTelInput.min.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+
+	<!-- Scripts -->
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script type="text/javascript" src="js/jquery.validate.js"></script>
+	<script type="text/javascript" src="js/jquery.fancybox.min.js"></script>
+	<script type="text/javascript" src="js/owl.carousel.min.js"></script>
+	<script type="text/javascript" src="js/custom.js"></script>
+	<script type="text/javascript" src="js/intlTelInput.js"></script>
+	<script type="text/javascript" src="js/form_validation.js"></script>
+	<script type="text/javascript" src="js/utils.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$('form :input[name=phone]').each(function(index) {
+				$(this).intlTelInput({
+					geoIpLookup: function geoIpLookup(callback) {
+						
+					},
+					initialCountry: "in",
+					nationalMode: false,
+					autoHideDialCode: false,
+					separateDialCode: true,
+					/*utilsScript: "js/utils.js"*/
+				});
+			});
+		});
+	</script>
+</body>
+</html>
