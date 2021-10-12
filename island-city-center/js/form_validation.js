@@ -218,7 +218,7 @@ $('#enquiry-form').validate({
         var data = {
             'name':name,'email':email,'mobile':mobile,
             'projectName':projectName,
-            'did':srd,'UTMSource':source,'UTMmedium':medium, 'url':encodedUrl};
+            'did':srd,'UTMSource':source,'UTMmedium':medium, 'url':url.substring(0,255)};
         console.log(data);
         storeLeadInSFDC(data);
         return;
