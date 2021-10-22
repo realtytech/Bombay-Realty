@@ -269,6 +269,9 @@ function setFormType(form_val,configuration)
 }
 
 function storeLeadInSFDC(data) {
+    $(':button[type="submit"]').prop('disabled', true);
+    $(':button[type="submit"]').prop("value", "Processing....");
+    console.log()
     console.log(data)
     var settings = {
         "async": true,
@@ -281,12 +284,14 @@ function storeLeadInSFDC(data) {
         "processData": false,
         "data": JSON.stringify(data)
       }
-      
+    //   return;
       $.ajax(settings).done(function (response) {
         console.log(response);
         storeLeadInDB(data["name"], data["email"], data["mobile"], JSON.stringify(response));
         setTimeout(function redirect_response() { window.location.href = "thankyou.html"; }, 1000)
+        $(':button[type="submit"]').prop('disabled', false);
       }); 
+      
 
 }
 
