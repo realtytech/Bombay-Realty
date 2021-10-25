@@ -47,7 +47,7 @@ $('#enquiry-form').validate({
     errorPlacement: function(error, element) {},
     submitHandler: function(form) {
         $('.loader-spinner').show();
-        $('.loader-spinner').css("position","fixed ");
+        // $('.loader-spinner').css("position","fixed ");
         $(':button[type="submit"]').prop('disabled', true);
         $(':button[type="submit"]').prop("value", "Processing....");
 
