@@ -46,8 +46,10 @@ $('#enquiry-form').validate({
     onkeyup: false,
     errorPlacement: function(error, element) {},
     submitHandler: function(form) {
-
-        //$('.loader-spinner').show();
+        $('.loader-spinner').show();
+        $('.loader-spinner').css("position","fixed ");
+        $(':button[type="submit"]').prop('disabled', true);
+        $(':button[type="submit"]').prop("value", "Processing....");
 
         var source = getParameterByName('utm_source');
 
@@ -222,7 +224,7 @@ $('#enquiry-form').validate({
         console.log(data);
         storeLeadInSFDC(data);
         return;
-
+        
         var lead_url = "https://lms.netbizlabs.com/admin/leads_api/store_api_lead/";
 
         // LEAD to LMS
