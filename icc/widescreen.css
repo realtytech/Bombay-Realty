@@ -1,0 +1,234 @@
+* {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+
+}
+
+body {
+    font-family: 'Montserrat';
+    font-size: 20px;
+    background-color: #000 !important;
+    color: #f1f1f1 !important;
+}
+p {
+    font-size: 1.25vw;
+}
+
+#hero-div {
+    height: 100vh;
+    width: 100vw;
+    background: url('./assets/images/banner1.jpg') no-repeat;
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+}
+
+#br-logo {
+    position: absolute;
+    top: 3vh;
+    left: 3vh;
+
+}
+
+#br-logo img {
+    width: 15vw;
+    min-width: 130px;
+}
+
+#icc-logo {
+    position: absolute;
+    top: 3vh;
+    right: 10vw;
+
+}
+
+#icc-logo img {
+    width: 7vw;
+    min-width: 75px;
+}
+
+#desktop-nav {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 7vw;
+    height: 100vh;
+    background-color: #fff;
+    text-align: center;
+
+}
+
+#desktop-nav h1 {
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+    margin: auto;
+    padding: 2vw;
+    font-size: 2.5em !important;
+    color: black !important;
+    font-weight: 100;
+}
+
+#bottom-icons {
+    position: fixed !important;
+    bottom: 0 !important;
+    padding-bottom: 1vw !important;
+    z-index: 99999 !important;
+
+}
+
+#bottom-icons * {
+    margin: auto !important;
+    text-align: center !important;
+    font-size: 2vw;
+    color: #000;
+    padding: 1.5rem;
+
+}
+
+.fixed-icons {
+    width: 3vw !important;
+    padding: 1.5vw !important;
+}
+
+/* .mail-i {
+    background: url('/assets/images/mail-24px.svg') no-repeat center content-box;
+    display: inline-block;
+    margin:1.8vw;
+} */
+
+.p-4 {
+    padding: 0vw;
+}
+
+* {
+    box-sizing: border-box
+}
+
+.glyphicon {
+    overflow: hidden;
+    display: none;
+
+}
+.carousel-control{
+    display: none;
+}
+
+h1 {
+    overflow: hidden;
+}
+
+.btn-dark {
+    background-color: #111;
+    color: #fff;
+    margin-top: 4rem;
+    padding: 2rem;
+}
+
+.fa {
+    display: block;
+    font-size: 2em;
+    margin: auto;
+    padding-top: 1em;
+    color: #111;
+    overflow: hidden;
+}
+
+.nav-icons {
+    position: fixed;
+    bottom: 30px;
+    right: 0;
+    width: 7vw;
+
+}
+
+
+#desktop {
+    display: block;
+}
+
+#mobile {
+    display: none;
+}
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+  }
+  
+  .sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 3 rem;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  .sidenav a:hover {
+    color: #f1f1f1;
+  }
+  
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+  
+  #menu:hover{
+      cursor: pointer;
+  }
+
+
+
+  @media screen and (min-width: 1200px) and (max-width:1600px) {
+    p,li, #text{
+        font-size: 18px;
+    }
+    .btn-dark{
+        padding: 1rem;
+        margin-top: 1rem;
+    }
+    #apartments-section hr{
+        display: none;
+    }
+  }
+  @media screen and (min-width: 1600px) and (max-width:1789px){
+    p,li, #text{
+        font-size: 22px;
+    }
+  }
+  @media screen and (min-width: 1789)and (max-width:2000px) {
+    p,li,  #text{
+        font-size: 24px;
+    }
+  }
+
+  @media screen and (min-width: 2000) {
+    p,li,  #text{
+        font-size: 44px;
+    }
+  }
+
+  #greetings{
+      position: absolute;
+      display: inline-block;
+      top: 250px;
+      right: 200px;
+      width: 300px;
+     
+  }
+  #greetings h1{
+    font-weight: 800;
+  }
+
